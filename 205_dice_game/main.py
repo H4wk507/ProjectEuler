@@ -2,7 +2,6 @@
 # Colin 6 six-sided dice
 
 from collections import defaultdict
-import numpy as np
 import time
 
 
@@ -37,9 +36,7 @@ def get_dice_sums(ndices: int, maxdigit: int) -> defaultdict[int, int]:
             break
         elif start[0] == maxdigit:
             # find first not maxdigit index
-            idx = min(
-                [idx for idx, val in enumerate(start[1:]) if val != maxdigit]
-            )
+            idx = min([idx for idx, val in enumerate(start[1:]) if val != maxdigit])
             idx += 1
             start[idx] += 1
             s += 1
@@ -52,7 +49,8 @@ def get_dice_sums(ndices: int, maxdigit: int) -> defaultdict[int, int]:
         d[s] += 1
     return d
 
-#def test():
+
+# def test():
 #    d1 = [1 / 4 for _ in range(4)]
 #    d1_cpy = d1[:]
 #    for i in range(8):

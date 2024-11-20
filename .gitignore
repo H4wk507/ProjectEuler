@@ -3,3 +3,6 @@ kriskros*
 */target/*
 */debug/*
 Cargo.lock
+.zig-cache/
+main
+main.o

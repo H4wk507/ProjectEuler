@@ -6,3 +6,4 @@ Cargo.lock
 .zig-cache/
 main
 main.o
+.DS_Store
